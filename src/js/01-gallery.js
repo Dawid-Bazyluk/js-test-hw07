@@ -20,13 +20,13 @@ const galleryCreator = galleryItems
 gallery.insertAdjacentHTML("afterbegin", galleryCreator);
 let instance;
 
-function logic(e) {
-  e.preventDeafult();
+const logic = (e) => {
+  e.preventDefault();
   instance = basicLightbox.create(`
     <img class="gallery__image" src=${e.target.dataset.source}>
 `);
 
-  instance.show();
-}
+  instance.show();S
+};
 
 gallery.addEventListener("click", logic);
