@@ -18,3 +18,15 @@ const galleryCreator = galleryItems
   .join("");
 
 gallery.insertAdjacentHTML("afterbegin", galleryCreator);
+let instance;
+
+const logic = (e) => {
+  e.preventDeaful();
+  const instance = basicLightbox.create(`
+    <img class="gallery__image" src=${e.target.dataset.source}>
+`);
+
+  instance.show();
+};
+
+gallery.addEventListener("click", logic);
