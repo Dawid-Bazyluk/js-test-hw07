@@ -1,7 +1,7 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-const gallery = document.querySelector("gallery");
+const gallery = document.querySelector(".gallery");
 const galleryCreator = galleryItems
   .map(
     (image) => `<div class="gallery__item">
