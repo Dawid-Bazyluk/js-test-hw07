@@ -13,8 +13,7 @@ const galleryCreator = galleryItems
       alt=${image.description}
     />
   </a>
-</div>
-`
+</div>`
   )
   .join("");
 
