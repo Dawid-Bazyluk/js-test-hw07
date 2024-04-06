@@ -1,10 +1,10 @@
 import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
-
 const gallery = document.querySelector("gallery");
-const galleryCreator = galleryItems.map(
-  (image) => `<div class="gallery__item">
+const galleryCreator = galleryItems
+  .map(
+    (image) => `<div class="gallery__item">
   <a class="gallery__link" href=${image.original}
     <img
       class="gallery__image"
@@ -15,6 +15,7 @@ const galleryCreator = galleryItems.map(
   </a>
 </div>
 `
-).join("");
+  )
+  .join("");
 
-gallery.insertAdjacentHTML("beforebegin", galleryCreator);
+gallery.insertAdjacentHTML("afterbegin", galleryCreator);
