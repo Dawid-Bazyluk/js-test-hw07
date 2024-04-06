@@ -8,7 +8,7 @@ const galleryCreator = galleryItems
   <a class="gallery__link" href=${image.original}>
     <img
       class="gallery__image"
-      src=${image.preview}
+      src="${image.preview}"
       data-source=${image.original}
       alt=${image.description}
     />
