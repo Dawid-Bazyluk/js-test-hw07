@@ -22,6 +22,9 @@ let instance;
 
 const logic = (e) => {
   e.preventDefault();
+  if (e.target.nodeName !== "IMG") {
+    return console.log(`Click on IMG not ${e.target.nodeName}`);
+  }
   instance = basicLightbox.create(`
     <img class="gallery__image" src=${e.target.dataset.source}>
 `);
