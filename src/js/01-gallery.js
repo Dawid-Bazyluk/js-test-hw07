@@ -5,7 +5,7 @@ const gallery = document.querySelector("gallery");
 const galleryCreator = galleryItems
   .map(
     (image) => `<div class="gallery__item">
-  <a class="gallery__link" href=${image.original}
+  <a class="gallery__link" href=${image.original}>
     <img
       class="gallery__image"
       src=${image.preview}
