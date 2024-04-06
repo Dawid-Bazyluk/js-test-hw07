@@ -26,7 +26,7 @@ const logic = (e) => {
     <img class="gallery__image" src=${e.target.dataset.source}>
 `);
 
-  instance.show();S
+  instance.show();
 };
 
 gallery.addEventListener("click", logic);
