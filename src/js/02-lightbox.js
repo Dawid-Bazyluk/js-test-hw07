@@ -12,3 +12,11 @@ const galleryCreator = galleryItems
   .join("");
 
 gallery.insertAdjacentHTML("beforebegin", galleryCreator);
+
+let instance;
+
+
+var lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
