@@ -2,12 +2,11 @@ import { galleryItems } from "./gallery-items.js";
 // Change code below this line
 
 const gallery = document.querySelector(".gallery");
-
-const galleryCreator = galleryItems
+const makingImage = galleryItems
   .map(
     (image) => `<a class="gallery__item" href="${image.original}">
   <img class="gallery__image" src="${image.preview}" alt="${image.description}"/>`
   )
-  .join("");
-
-gallery.insertAdjacentHTML("beforebegin", galleryCreator);
+    .join("");
+  
+    gallery.insertAdjacentHTML("afterbegin", makingImage);
