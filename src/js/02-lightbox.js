@@ -7,6 +7,8 @@ const makingImage = galleryItems
     (image) => `<a class="gallery__item" href="${image.original}">
   <img class="gallery__image" src="${image.preview}" alt="${image.description}"/>`
   )
-    .join("");
-  
-    gallery.insertAdjacentHTML("afterbegin", makingImage);
+  .join("");
+
+gallery.insertAdjacentHTML("afterbegin", makingImage);
+
+var lightbox = new SimpleLightbox(".gallery a");
